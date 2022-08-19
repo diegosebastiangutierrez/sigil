@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="Creá tu Sello mágico para que se te cumplan tus deseos" />
+    <title>Ouroboro's Magus - Creá tu Sello mágico</title>
+
+    <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link rel='stylesheet prefetch' href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+
+        <a class="navbar-brand" href="#">
+          <img style="display: inline-block;" height="20" src="img/logo.png" title="Ouroboro's Magic - SigilMaker" />
+          <h4 class="brand">Ouroboro's Magic</h4>
+        </a>
+      </div>
+    </div>
+        <!-- /.container-fluid -->
+  </nav>
+
+    <!-- The real code -->
+  <div class="container clear-fix">
+
+<article class="col-md-8" id="article-container">
+
+  <div class="row center-block text-center">
+    <h1>Sigil Maker <br/><small>Creá tu sello de Chaos Magic</small></h1>
+    <p>Escribí <strong>tu voluntad</strong> de forma imperativa.</p>
+  </div>
+
+  <div class="row center-block text-center">
+    <form id="form" action="#">
+      <input id="my-will" type="text" placeholder="Cuál es tu voluntad?" x-webkit-speech />
+      <button role="submit" type="submit">Generar</button>
+    </form>
+  </div>
+  <div class="row">
+    <div class="result text-center">
+      <h3 class="duplicates" data-toggle="tooltip" data-placement="top" title="Duplicate letters removed"></h3>
+      <h3 class="no-vowels" data-toggle="tooltip" data-placement="top" title="Vowels removed"></h3>
+      <h3 class="numbers" data-toggle="tooltip" data-placement="top" title="Letters converted to numbers"></h3>
+    </div>
+  </div>
+  <div class="row">
+
+    <div class="center-block">
+      <div class="svg-container">
+        <div>
+          <svg width="305" height="305">
+            <defs>
+              <marker id="markerCircle" markerWidth="8" markerHeight="8" refx="5" refy="5">
+                <circle cx="5" cy="5" r="2.5" style="stroke: #000000; fill: #ffffff;" />
+              </marker>
+
+              <marker id="markerArrow" markerWidth="11" markerHeight="11" refx="2" refy="6.5" orient="auto">
+                <path d="M2,2 L2,11 L10,6 L2,2" style="fill: #000000;" />
+              </marker>
+
+              <marker id="markerRect" markerWidth="7" markerHeight="7" refX="2" refY="4" orient="auto">
+                <rect x="1" y="1" width="1" height="6" style="stroke: none; fill:#000000;"></rect>
+              </marker>
+            </defs>
+          </svg>
+        </div>
+      </div>
+
+      <div class="row center-block text-center" id="submit-container">
+        <div class="col-md-6">
+          <a class="btn btn-primary btn-block" href="#save" id="savesvg" data-toggle="tooltip" data-placement="top" title="" data-original-title="Currently only works on Desktop. If on mobile, take a screen shot instead!">Guardar Vector</a>
+        </div>
+        <div class="col-md-6">
+          <a class="btn btn-primary btn-block" href="#save" id="savepng" data-toggle="tooltip" data-placement="top" title="" data-original-title="New! Save images directly from your browser!">Guardar PNG</a>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+</article>
+
+<aside class="col-md-4">
+  <div class="panel-group" role="tablist" id="accordion" aria-multiselectable="true">
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingOne">
+        <h4 class="panel-title"> <a href="#collapseOne" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="collapseOne" class="collapsed">Elementos Necesarios</a> </h4>
+      </div>
+
+      <div class="panel-collapse collapse" role="tabpanel" id="collapseOne" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
+        <div class="panel-body">
+
+          <ol>
+            <li>Fibra Negra</li>
+            <li>Papel</li>
+          </ol>
+          <p>O bien puedes imprimir el Sigil y luego dibujar un círculo alrededor</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingTwo">
+        <h4 class="panel-title"> <a href="#collapseTwo" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="collapseTwo">Paso #1 Decide lo que quieres que se cumpla</a> </h4>
+      </div>
+      <div class="panel-collapse collapse" role="tabpanel" id="collapseTwo" aria-labelledby="headingTwo" aria-expanded="false" style="height: 0px;">
+        <div class="panel-body">
+
+          <ol>
+            <li>Relaja tu mente, puedes hacer yoga, meditación, escuchar música a bajo volúmen, o realizar cualquier otra actividad que te relaje y calme tu mente</li>
+            <li>Decide lo que quieres se cumpla</li>
+            <li>Escríbelo en el campo "Cuál es tu voluntad"</li>
+          </ol>
+
+          <p>Debes escribir de modo imperativo, y en modo presente, como si ya lo tuvieras.<br/>
+          <strong>Ejemplo: </strong> "Mi poder es absoluto" y no "Deseo tener poder absoluto"
+          </p>
+
+          <p>Si deseas hacer tu sigil a mano:
+            <ol>
+              <li>escribe tu voluntad en un papel</li>
+              <li>Elimina primero todas las vocales y signos de puntuación</li>
+              <li>Elimina las letras que se repiten, dejando solamente la primera que aparece (si la frase es "Mi poder es absoluto" tu texto final para el sigil quedría como "MPDRSBLT")</li>
+              <li>Haz una tabla del 1 al 9 y dale un valor a cada letra del alfabeto (sin las vocales)</li>
+            </ol>
+          </p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingThree">
+        <h4 class="panel-title"> <a href="#collapseThree" class="" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="collapseThree">Paso #2 Dibuja el Sigil</a> </h4>
+      </div>
+      <div class="panel-collapse collapse" role="tabpanel" id="collapseThree" aria-labelledby="headingThree" aria-expanded="false" style="">
+        <div class="panel-body">
+          <p>Si decides imprimir el sigil, recuerda dibujar un círculo alrededor del mismo y luego con las manos recortar el espacio excedente de la hoja para que la energía que deposites en el mismo no se extravíe por fuera de éste.</p>
+          <ol>
+            <li>Divide el papel en 9 cuadrantes, comienza por la primer letra (valor numérico) a dibujar lineas desde el centro hasta la siguiente letra y así hasta el final</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingFour">
+        <h4 class="panel-title"> <a href="#collapseFour" class="" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="collapseFour">Paso #3 Olvida su significado</a> </h4>
+      </div>
+      <div class="panel-collapse collapse" role="tabpanel" id="collapseFour" aria-labelledby="headingFour" aria-expanded="false" style="">
+        <div class="panel-body">
+          <ol>
+            <li>El sigil debe entrar en la mente inconciente para luego cumplirse, si recuerdas lo que significa no funcionará</li>
+            <li>Idealmente, genera varios sigils, para olvidar su significado</li>
+            <li>Puedes darle tu sigil a otra persona para que lo cargue ya que no conoce su significado</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingFive">
+        <h4 class="panel-title"> <a href="#collapseFive" class="" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="collapseFive">Paso #4 Cárgalo(s) con tu energía</a> </h4>
+      </div>
+      <div class="panel-collapse collapse" role="tabpanel" id="collapseFive" aria-labelledby="headingFive" aria-expanded="false" style="">
+        <div class="panel-body">
+          <p>Existen varias maneras de cargar los sigils, enciende una vela, busca un lugar sin distracciones y con poca luz y haz lo siguiente:</p>
+          <ol>
+            <li><strong>Método de la pasión:</strong> ten sexo o mastúrbate. Al llegar al climax visualiza el sigil.</li>
+            <li><strong>Método de dolor:</strong> Visualiza el sigil mientras estas muy triste, o con algún dolor físico</li>
+            <li><strong>Método de la posición del muerto:</strong> Popularizado por el pensador ocultista Austin Osman Spare , para alcanzar un estado de conocimiento (gnosis) o iluminación, a través de cansancio físico.<br>
+            <ol>
+              <li>Colocate en puntas de pie con los brazos detrás de la espalda</li>
+              <li>La espalda completamente arqueada y el cuello tenso (como si te estuvieras ahorcando)</li>
+              <li>Una vez alcanzado el stress y estado alterado de conciencia, enfócate en el sigil</li>
+            </ol>
+            </li>
+            <li><strong>Ritual del vacío:</strong>
+              <ol>
+                <li>Siéntate frente a un gran espejo</li>
+                <li>Respira hasta estar relajado mientras te miras a los ojos en el reflejo</li>
+                <li>Luego de unos minutos todo lo que te rodea comenzará a perder foco, y entrarás en un estado en el que no pensarás en nada (Llamado vacío)</li>
+                <li>Una vez alcanzado este estado, haz contacto visual con tu sigil, esto cargará con energía al mismo</li>
+              </ol>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="headingSix">
+        <h4 class="panel-title"> <a href="#collapseSix" class="" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="collapseSix">Paso #5 Activa el Sigil</a> </h4>
+      </div>
+      <div class="panel-collapse collapse" role="tabpanel" id="collapseSix" aria-labelledby="headingSix" aria-expanded="false" style="">
+        <div class="panel-body">
+          <p>Elementos necesarios:</p>
+          <ol>
+            <li>Utiliza un fósforo (no encendedor)</li>
+            <li>Bowl metálico o recipiente donde puedas dejar caer el sigil</li>
+          </ol>
+          <p>Enciende el sigil con el fósforo, sostenlo con tu mano y déjalo quemarse por completo hasta llegar el fuego a la punta de tus dedos (siente el calor pero no te quemes)</p>
+          <p>Una vez realizado esto, esparce las cenizas al aire, entierralas, o puedes en vez de quemarlo arrojarlo a un río o alguna masa líquida donde se deshaga</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p>Luego de un tiempo, tu magia del Chaos comenzará a surtir efecto.<br/>
+    <strong>Sé muy cuidadoso con lo que pides y no trates de doblegar la voluntad de otras personas, puede volverse en tu contra.</strong>
+    </p>
+
+</aside>
+
+
+  </div>
+
+  <footer class="container-fluid">
+    Ouroboro's Chaos Magic
+  </footer>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <script src='//d3js.org/d3.v3.min.js'></script>
+  <script src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js'></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108896937-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-108896937-1');
+</script>
+
+
+  <script src="js/index.js"></script>
+</body>
+
+</html>

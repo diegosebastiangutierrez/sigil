@@ -1,0 +1,90 @@
+@import url(https://fonts.googleapis.com/css?family=Metamorphous|Hammersmith+One);
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+  /* Retina-specific stuff here */
+  body {
+    background: url(/sigil/img/geometry_@2X.png);
+  }
+}
+
+body {
+  background: tomato;
+}
+
+h1 {
+  font-family: 'Hammersmith One', sans-serif;
+}
+
+.navbar{
+
+}
+
+.navbar-brand .brand{
+display:inline-block;
+}
+
+.result h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.result h3:hover {
+  cursor: pointer;
+  color: #CA2727;
+}
+
+#form #my-will {
+  width: 265px;
+}
+
+#article-container{
+margin-bottom:1em;
+}
+
+#submit-container{
+margin:1em 0;
+}
+
+.svg-container {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.sigil {
+  stroke-linejoin: round;
+  marker-start: url(#markerCircle);
+  marker-end: url(#markerRect);
+}
+
+.footer, .donate {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.donate-text {
+  margin-top: 25px;
+}
+
+footer{
+margin-top:1.5em;
+background:black;
+padding:1em;
+text-align:center;
+color:white;
+}
+
+.footer-logo, .donate-button {
+  height: 50px;
+  width: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
